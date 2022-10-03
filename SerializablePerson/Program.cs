@@ -42,8 +42,7 @@ namespace SimpleProject
                 using (Stream fStream =
                 File.OpenRead("test.soap"))
                 {
-                    p = (Person)soapFormat.
-Deserialize(fStream);
+                    p = (Person)soapFormat.Deserialize(fStream);
                 }
                 WriteLine(p);
             }
